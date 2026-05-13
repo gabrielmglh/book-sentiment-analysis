@@ -179,6 +179,20 @@ As one can see, the only review that it got wrong was review 10.
 
 ## How to Run the Project
 
+### 0. Kaggle API setup 
+This project downloads datasets using the Kaggle API. Since Kaggle credentials are personal, you must provide your own API key.
+
+#### Generate your API key 
+
+ - Go to (https://www.kaggle.com/settings/api)[https://www.kaggle.com/settings/api]
+ - Scroll to the API section
+ - Click on "**Create Legacy API key**"
+ - This will download a file name ```kaggle.json```.
+
+#### Place de credentials file 
+
+- Put you ```kaggle.json``` in the folder ```kaggle```
+
 ### 1. Clone the repository
 
 ```bash
@@ -196,7 +210,7 @@ venv\Scripts\activate     # Windows
 ### 3. Install dependencies
 
 ```bash
-pip install pandas matplotlib seaborn scikit-learn notebook
+pip install -r requirements.txt
 ```
 
 ### 4. Run the notebooks
