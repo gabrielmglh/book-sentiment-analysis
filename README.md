@@ -97,10 +97,22 @@ This project covers the full pipeline of a typical NLP workflow, including:
 ### Visualizations
 
 The project includes the following visual analyses:
-- Number of reviews per year  
-- Overall sentiment distribution  
-- Sentiment trends over time  
-- Confusion matrix  
+- Number of reviews per year
+  <p align="center">
+  <img src="/data/plots/reviews_per_year.png" width="80%">
+  </p>  
+- Overall sentiment distribution
+  <p align="center">
+  <img src="/data/plots/sentiment_distribution.png" width="80%">
+  </p>  
+- Sentiment distribution per year
+  <p align="center">
+  <img src="/data/plots/sentiment_distribution_per_year.png" width="80%">
+  </p>    
+- Confusion matrix
+  <p align="center">
+  <img src="/data/plots/confusion_matrix.png" width="80%">
+  </p>    
 
 ---
 
