@@ -1,0 +1,13 @@
+# Data
+data/
+
+# Kaggle credentials
+kaggle/
+*.json
+
+# Env
+.env
+
+# Python
+__pycache__/
+*.pyc
