@@ -41,6 +41,10 @@ This project covers the full pipeline of a typical NLP workflow, including:
 
 ## Methodology
 
+### 00_data_scraping.ipynb
+
+- Import dataset from Kaggle
+
 ### 01_data_clean.ipynb
 - Data cleaning and preprocessing  
 - Text normalization (lowercase, removal of punctuation)  
@@ -180,7 +184,7 @@ As one can see, the only review that it got wrong was review 10.
 ## How to Run the Project
 
 ### 0. Kaggle API setup 
-This project downloads datasets using the Kaggle API. Since Kaggle credentials are personal, you must provide your own API key.
+This project downloads the dataset directly from Kaggle. In order to download it in your PC, you need to generate your own Kaggle API key.  
 
 #### Generate your API key 
 
@@ -188,10 +192,7 @@ This project downloads datasets using the Kaggle API. Since Kaggle credentials a
  - Scroll to the API section
  - Click on "**Create Legacy API key**"
  - This will download a file name ```kaggle.json```.
-
-#### Place de credentials file 
-
-- Put you ```kaggle.json``` in the folder ```kaggle```
+ - When you run notebook ```00_data_scraping_ipynb```, you will need to insert your username and API key. Both informations are contained in ```kaggle.json```.
 
 ### 1. Clone the repository
 
@@ -220,7 +221,8 @@ jupyter notebook
 ```
 Then run the notebooks in the following order:
 
-1. ```01_data_clean.ipynb```
-2. ```02_data_analysis.ipynb```
-3. ```03_data_training.ipynb```
-4. ```04_data_testing.ipynb```
+1. ```00_data_scraping.ipynb```
+2. ```01_data_clean.ipynb```
+3. ```02_data_analysis.ipynb```
+4. ```03_data_training.ipynb```
+5. ```04_data_testing.ipynb```
